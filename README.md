@@ -22,11 +22,11 @@ gem install rails
 sudo apt-get python
 
 3.	To run the Online Judge
-	a. In one terminal window/command prompt:
+	a.	In one terminal window/command prompt:
 		cd (path of directory where OnlineJudge folder is saved)
 	cd ./Judgement
 	python server.py 50007
-	b. In another terminal window/command prompt:
+	b.	In another terminal window/command prompt:
 	cd (path of directory where OnlineJudge folder is saved)
 	rails server
 	This will fire up WEBrick, a web server distributed with Ruby by default. To see the application, open a browser 	window and navigate to http://localhost:3000.
