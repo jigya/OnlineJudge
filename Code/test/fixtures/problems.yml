@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  timeLimit: 9.99
+  sourceLimit: 9.99
+  dateAdded: 2014-04-14
+  problemStatement: MyText
+  solutionFile: MyText
+  testFile: MyText
+
+two:
+  title: MyString
+  timeLimit: 9.99
+  sourceLimit: 9.99
+  dateAdded: 2014-04-14
+  problemStatement: MyText
+  solutionFile: MyText
+  testFile: MyText

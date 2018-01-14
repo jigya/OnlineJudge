@@ -1,0 +1,23 @@
+<%= simple_form_for(@problem_in_contest) do |f| %>
+<%= f.error_notification %>
+<h5>
+  <% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+ </h5>
+
+  <%= f.input :dateAdded, :as => :hidden, :input_html => {:value => Time.now.to_date} %>
+
+
+  <div class="form-inputs">
+    <%= f.association :problem, label_method: :title , value_method: :id , include_blank: false %>
+    <%= f.association :contest, value_method: :id, :as => :hidden, :input_html => {:value =>(@contest.id) }, include_blank: false %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+
+
+

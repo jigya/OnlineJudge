@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>UserName:</strong>
+  <%= @user.username %>
+</p>
+
+<p>
+  <strong>Email ID:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Date of Birth:</strong>
+  <%= @user.dateOfBirth %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @user.country %>
+</p>
+
+<p>
+  <strong>About Me:</strong>
+  <%= @user.aboutMe %>
+</p>
+
+<p>
+  <strong>Ranking:</strong>
+  <%= @user.ranking %>
+</p>
+
+<p>
+  <strong>Institution:</strong>
+  <%= @user.institution %>
+</p>
+<div class="table-responsive">
+<table class="table table-stripped">
+  <thead>
+    <tr>
+      <th>Submission ID</th>
+      <th>Problem Title</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @problemSubmitted.each do |problem_in_contest| %>
+      <tr>
+        <td><%= problem_in_contest.id %></td>
+        <td><%= Problem.where('id=?',problem_in_contest.problem_id)[0].title %></td>
+        <td><%= @submission_status[problem_in_contest.status[0]] %><%= problem_in_contest.status %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>

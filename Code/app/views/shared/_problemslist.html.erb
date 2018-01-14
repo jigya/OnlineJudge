@@ -1,0 +1,24 @@
+<div class="table-responsive">
+    
+<table id="problems" class="table table-stripped">  
+<thead>  
+  <tr>  
+    <!-- <th>ID</th> -->
+    <th>Title</th>  
+    <th>Time Limit</th>  
+    <th>Date Added</th>  
+  </tr>  
+</thead>  
+<tbody>
+    <% @problems.each do |problem| %> 
+    <tr>  
+      <!-- <th>problem.id</th> -->
+      <td><%= link_to(problem.title, problem) %></td>   
+      <td><%= problem.timeLimit%></td> 
+      <!-- <td><%= problem.dateAdded.strftime("%B %e, %Y") %></td>    -->
+      <td><%= problem.dateAdded %></td>
+    </tr>
+  <% end %>
+  </tbody>  
+</table>
+</div>

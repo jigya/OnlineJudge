@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+
+<p>
+  <strong>Problem:</strong>
+  <%= @submission.problem %>
+</p>
+
+<p>
+  <strong>Contest:</strong>
+  <%= @submission.contest %>
+</p>
+
+<p>
+  <strong>Language Used:</strong>
+  <%= @submission.languageUsed %>
+</p>
+
+<p>
+  <strong>Date Time Of Submission:</strong>
+  <%= @submission.dateTimeOfSubmission %>
+</p>
+
+<p>
+  <strong>Time Taken:</strong>
+  <%= @submission.timeTaken %>
+</p>
+
+<p>
+  <strong>Memory Used:</strong>
+  <%= @submission.memoryUsed %>
+</p>
+
+<p>
+  <strong>Submitted Code:</strong>
+  <%= @submission.submissionFile %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @submission.status %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @submission.user %>
+</p>
+
+<%= link_to 'Edit', edit_problem_submission_path(@submission) %> |

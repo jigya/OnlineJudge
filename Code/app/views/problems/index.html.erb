@@ -1,0 +1,54 @@
+<!-- <h1>Problem Set</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Time Limit</th>
+      <th>Source Limit</th>
+      <th>Date Added</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @problems.each do |problem| %>
+      <tr>
+        <td><%= problem.title %></td>
+        <td><%= problem.timeLimit %></td>
+        <td><%= problem.sourceLimit %></td>
+        <td><%= problem.dateAdded %></td>
+        <td><%= link_to 'Show', problem %></td>
+        <td><%= link_to 'Edit', edit_problem_path(problem) %></td>
+        <td><%= link_to 'Destroy', problem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Problem', new_problem_path %> -->
+
+<h1>Problem Set</h1>  
+    
+<table id="problems">  
+<thead>  
+  <tr>  
+    <!-- <th>ID</th> -->
+    <th>Title</th>  
+    <th>Time Limit</th>  
+    <th>Date Added</th>  
+  </tr>  
+</thead>  
+<tbody>
+    <% @problems.each do |problem| %> 
+    <tr>  
+      <td><%= link_to(problem.title, problem) %></td>   
+      <td><%= problem.timeLimit%></td> 
+      <td><%= problem.dateAdded %></td>
+    </tr>
+  <% end %>
+  </tbody>  
+</table>
+
+<%= link_to 'New Problem', new_problem_path %>

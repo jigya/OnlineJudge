@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  contestName: MyString
+  startDateTime: 2014-04-14 16:18:15
+  endDateTime: 2014-04-14 16:18:15
+  contestStatus: MyString
+  user_id: 
+
+two:
+  contestName: MyString
+  startDateTime: 2014-04-14 16:18:15
+  endDateTime: 2014-04-14 16:18:15
+  contestStatus: MyString
+  user_id: 

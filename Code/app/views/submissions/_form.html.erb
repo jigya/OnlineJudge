@@ -1,0 +1,17 @@
+<%= simple_form_for([@problem,@submission]) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :languageUsed, :collection=>[["C++", ".cpp"], ["Java", ".java"], ["Python", ".py"]] %>
+    <%= f.input :dateTimeOfSubmission, :as => :hidden, :input_html => { :value => DateTime.now} %>
+    <%= f.input :submissionFile, :label => 'Submit Code'%>
+    <%= f.association :problem, :as => :hidden, :input_html => { :value => params[:problem_id]} %>
+    <%= f.association :contest, :as=> :collection_select, collection: Contest.where(id: ProblemInContest.select(:contest_id).where("problem_id=?", params[:problem_id])).where("endDateTime>?",DateTime.now).order(:endDateTime), label_method: :contestName, value_method: :id,:label=> "Contest Name", :include_blank=>false %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+ 

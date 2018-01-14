@@ -1,0 +1,23 @@
+<h1>Listing participants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Contest</th>
+      <th>User</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @participants.each do |participant| %>
+      <tr>
+        <td><%= participant.contest %></td>
+        <td><%= participant.user %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Participant', new_participant_path %>

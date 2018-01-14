@@ -1,0 +1,38 @@
+<div class="table-responsive">
+    
+<table id="problems" class="table table-stripped">  
+  <thead>  
+  <tr>  
+    <th>Rank</th>  
+    <th>User Name</th>  
+    <th>Problems Solved</th>  
+    <th>Time Taken</th>
+  </tr>  
+</thead>
+
+
+<tbody>
+
+<% @parorder.each_with_index do |participant, index| %>
+      <tr>
+        <td>
+          <%= index+1%>
+        </td>
+      	<td>
+      		<%= User.find(participant.user_id).username%>
+      	</td>
+      	<td>
+      		<%= participant.Solved%>
+      	</td>
+
+        <td>
+        	<%= participant.TimeTaken %>
+        </td>
+      </tr>
+      <% end %>
+</tbody>
+
+</table>
+</div>
+
+

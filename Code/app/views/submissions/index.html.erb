@@ -1,0 +1,36 @@
+<h1>Submissions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Submission ID</th>
+      <th>Problem ID</th>
+      <th>Languageused</th>
+      <th>Date Time Of Submission</th>
+      <th>Time</th>
+      <th>Memory Used</th>
+      <th>Status</th>
+      <th>User</th>
+      <th>Contest</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @submissions.each do |submission| %>
+      <tr>
+        <td><%= submission.id %></td>
+        <td><%= submission.problem_id %></td>
+        <td><%= submission.languageUsed %></td>
+        <td><%= submission.dateTimeOfSubmission %></td>
+        <td><%= submission.timeTaken %></td>
+        <td><%= submission.memoryUsed %></td>
+        <td><%= submission.status %></td>
+        <td><%= submission.user_id %></td>
+        <td><%= submission.contest_id %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+

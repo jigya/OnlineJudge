@@ -1,0 +1,13 @@
+<%= simple_form_for(@problem_in_contest) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+  	<%= f.association :problem, label_method: :title , value_method: :id , include_blank: false %>
+    <%= f.association :contest, label_method: :contestName , value_method: :id , include_blank: false %>
+
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

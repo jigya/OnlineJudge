@@ -1,0 +1,57 @@
+
+<% if @contest.id!=1 %>
+<div class="container-fluid">
+  <div  class="row">
+  <p>
+    <strong>Contest Name:</strong>
+    <%= @contest.contestName %>
+  </p>
+
+  <p>
+    <strong>Start:</strong>
+    <%= @contest.startDateTime %>
+  </p>
+
+  <p>
+    <strong>End:</strong>
+    <%= @contest.endDateTime %>
+  </p>
+
+  <p>
+    <strong>Hosted by:</strong>
+    <%= @contest.user.username %>
+  </p>
+</div>
+<%end%>
+
+<%if current_user.try(:admin?)%>
+
+<div class="row">
+  <%= render 'shared/problemadd' %>
+</div>
+<%end%>
+
+<%if @contest.startDateTime<DateTime.now or current_user.try(:admin?)%>
+<div class="row">
+  <div class="col-md-6">
+  <%= render 'shared/problemslist' %>
+  </div>
+
+  <div  class="col-md-6">
+  <%= render 'shared/scoreboard' %>
+  </div>
+
+</div>
+<%end%>
+<%if current_user.try(:admin?)%>
+  <%= link_to 'Edit', edit_contest_path(@contest) %> |
+  <%= link_to 'Create New Problem', new_problem_path %> 
+<%end%>
+
+<%if @contest.endDateTime>DateTime.now %>
+<%= render 'shared/participantadd' %>
+<% end%>
+
+</div>
+
+

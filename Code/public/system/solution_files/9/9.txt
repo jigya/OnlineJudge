@@ -1,0 +1,100 @@
+Case #1: 9
+Case #2: 9
+Case #3: 3
+Case #4: 16
+Case #5: Bad magician!
+Case #6: Bad magician!
+Case #7: 9
+Case #8: Bad magician!
+Case #9: 13
+Case #10: 15
+Case #11: Volunteer cheated!
+Case #12: 8
+Case #13: Bad magician!
+Case #14: Bad magician!
+Case #15: Bad magician!
+Case #16: Volunteer cheated!
+Case #17: 5
+Case #18: Volunteer cheated!
+Case #19: Volunteer cheated!
+Case #20: 4
+Case #21: Volunteer cheated!
+Case #22: 14
+Case #23: 2
+Case #24: 1
+Case #25: Bad magician!
+Case #26: Volunteer cheated!
+Case #27: Bad magician!
+Case #28: Bad magician!
+Case #29: Bad magician!
+Case #30: 4
+Case #31: Volunteer cheated!
+Case #32: 1
+Case #33: 16
+Case #34: Volunteer cheated!
+Case #35: 1
+Case #36: Volunteer cheated!
+Case #37: Bad magician!
+Case #38: Bad magician!
+Case #39: Volunteer cheated!
+Case #40: 15
+Case #41: 6
+Case #42: 6
+Case #43: Bad magician!
+Case #44: 1
+Case #45: 14
+Case #46: Bad magician!
+Case #47: 15
+Case #48: 13
+Case #49: Volunteer cheated!
+Case #50: 7
+Case #51: Bad magician!
+Case #52: Volunteer cheated!
+Case #53: Volunteer cheated!
+Case #54: Bad magician!
+Case #55: 9
+Case #56: Volunteer cheated!
+Case #57: Bad magician!
+Case #58: Volunteer cheated!
+Case #59: Bad magician!
+Case #60: Volunteer cheated!
+Case #61: 16
+Case #62: Bad magician!
+Case #63: 3
+Case #64: Volunteer cheated!
+Case #65: 2
+Case #66: Volunteer cheated!
+Case #67: Bad magician!
+Case #68: Volunteer cheated!
+Case #69: 16
+Case #70: Bad magician!
+Case #71: Bad magician!
+Case #72: Volunteer cheated!
+Case #73: 2
+Case #74: Bad magician!
+Case #75: Bad magician!
+Case #76: 3
+Case #77: Bad magician!
+Case #78: Bad magician!
+Case #79: Bad magician!
+Case #80: Volunteer cheated!
+Case #81: 2
+Case #82: 4
+Case #83: 7
+Case #84: 9
+Case #85: 2
+Case #86: Volunteer cheated!
+Case #87: Bad magician!
+Case #88: 7
+Case #89: Volunteer cheated!
+Case #90: Bad magician!
+Case #91: Volunteer cheated!
+Case #92: Bad magician!
+Case #93: Volunteer cheated!
+Case #94: Volunteer cheated!
+Case #95: 15
+Case #96: Volunteer cheated!
+Case #97: Volunteer cheated!
+Case #98: Bad magician!
+Case #99: Bad magician!
+Case #100: Volunteer cheated!

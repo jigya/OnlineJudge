@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  languageUsed: MyString
+  dateTimeOfSubmission: 2014-04-14 16:21:46
+  timeTaken: 9.99
+  memoryUsed: 9.99
+  submissionFile: MyText
+  status: MyText
+  user_id: 
+  problem_id: 
+  contest_id: 
+
+two:
+  languageUsed: MyString
+  dateTimeOfSubmission: 2014-04-14 16:21:46
+  timeTaken: 9.99
+  memoryUsed: 9.99
+  submissionFile: MyText
+  status: MyText
+  user_id: 
+  problem_id: 
+  contest_id: 

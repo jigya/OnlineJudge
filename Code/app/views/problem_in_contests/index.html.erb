@@ -1,0 +1,29 @@
+<h1>Listing problem in contests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Problem</th>
+      <th>Contest</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @problem_in_contests.each do |problem_in_contest| %>
+      <tr>
+        <td><%= problem_in_contest.problem %></td>
+        <td><%= problem_in_contest.contest %></td>
+        <td><%= link_to 'Show', problem_in_contest %></td>
+        <td><%= link_to 'Edit', edit_problem_in_contest_path(problem_in_contest) %></td>
+        <td><%= link_to 'Destroy', problem_in_contest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Problem in contest', new_problem_in_contest_path %>

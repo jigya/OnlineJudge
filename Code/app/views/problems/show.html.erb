@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @problem.title %>
+</p>
+
+<p>
+  <strong>Problem Statement:</strong>
+  <%= @problem.problem_statement %>
+</p>
+
+<p>
+  <strong>Time Limit:</strong>
+  <%= @problem.timeLimit %>
+</p>
+
+<p>
+  <strong>Source Limit:</strong>
+  <%= @problem.sourceLimit %>
+</p>
+
+<p>
+  <strong>Date Added:</strong>
+  <%= @problem.dateAdded %>
+</p>
+
+<%= link_to 'Submit', new_problem_submission_path(@problem) %>

@@ -1,0 +1,12 @@
+<div class="col-sm-3 col-md-2 sidebar">
+  <ul class="nav nav-sidebar">
+    <% if Contest.exists?(1) %>
+
+	<li><%= link_to "Practice ", Contest.find(1) %></li>
+    <% end %>
+    <li><%= link_to "Contests", contests_path %></li>
+    <li><%= link_to "about", about_path %></li>
+    
+
+  </ul>
+</div>
